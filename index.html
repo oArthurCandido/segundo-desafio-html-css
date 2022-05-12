@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!---Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!----Estilos-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Formulário freeCodeCamp Curso Web</h1>
+      <p id="description">
+        Formulário criado para atender ao desafio e onclusão do curso de
+        desenvolvimento WEB do FreeCodeCamp
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <div class="form-group">
+            <label for="name" id="name-label">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Digite seu nome"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">E-mail</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Digite seu melhor e-mail"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label"
+              >Idade<span class="clue">(opicional)</span></label
+            >
+            <input
+              id="number"
+              type="number"
+              name="idade"
+              min="10"
+              max="99"
+              placeholder="Idade"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div id="menu-dropdow" class="form-group">
+          <p>Escolha uma das opções abaixo</p>
+
+          <select name="escolha" id="dropdown" class="form-control">
+            <option value="option1">Opção 1</option>
+            <option value="option2">Opção 2</option>
+          </select>
+        </div>
+        <div id="menu-checkbox" class="form-group">
+          <p>Escolha quantas opções quiser abaixo</p>
+          <label for="opcao"
+            ><input
+              type="checkbox"
+              name="opcao"
+              value="op1"
+              class="input-checkbox"
+            />
+            Opção 1</label
+          >
+          <label for="opcao"
+            ><input
+              type="checkbox"
+              name="opcao"
+              value="op2"
+              class="input-checkbox"
+            />
+            Opção 2</label
+          >
+          <label for="opcao"
+            ><input
+              type="checkbox"
+              name="opcao"
+              value="op3"
+              class="input-checkbox"
+            />
+            Opção 3</label
+          >
+          <label for="opcao"
+            ><input
+              type="checkbox"
+              name="opcao"
+              value="op4"
+              class="input-checkbox"
+            />
+            Opção 4</label
+          >
+        </div>
+        <div id="menu-radio" class="form-group">
+          <p>Escolha uma da opções abaixo</p>
+          <label for=""
+            ><input
+              type="radio"
+              name="opcao"
+              value="opcao1"
+              class="radio-input"
+            />Opção 1</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="opcao"
+              value="opcao2"
+              class="radio-input"
+            />Opção 2</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="opcao"
+              value="opcao3"
+              class="radio-input"
+            />Opção 3</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="opcao"
+              value="opcao4"
+              class="radio-input"
+            />Opção 4</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Alguma sugestão que queira deixar?</p>
+          <textarea
+            placeholder="Deixe suas sugestões de melhoria!"
+            name="declaracao"
+            id="declaracao"
+            cols="30"
+            rows="4"
+          ></textarea>
+        </div>
+        <button id="submit" class="form-group">
+          <p id="pdobotao">Enviar</p>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
